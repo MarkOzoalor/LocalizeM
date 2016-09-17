@@ -1,11 +1,15 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar danger>
     <ion-title>
       <ion-icon name="home"></ion-icon>Localize Me
     </ion-title>
+    <ion-buttons end>
+      <button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+    </ion-buttons>  
   </ion-navbar>
 </ion-header>
+ 
 
 <ion-content padding class="home">
-
+<div #map id="map"></div>
 </ion-content>
